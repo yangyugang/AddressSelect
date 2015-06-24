@@ -11,7 +11,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AddressDataSource dataSource = new AddressDataSource();
-        dataSource.test(this);
+        System.out.println(AddressDataSource.getInstance().getProvinces());
+        System.out.println(AddressDataSource.getInstance().getCitiesByProvinceNo(110000));
+        System.out.println(AddressDataSource.getInstance().getAreasByCityNo(110100));
     }
 }

@@ -58,7 +58,7 @@ public class AddressDataSource {
                 Integer cityAddressNo = (addressNo / 100) * 100 ;
                 ArrayList<Address> areas = mAreas.get(cityAddressNo, new ArrayList<Address>());
                 if (areas.size() == 0) {
-                    mCities.append(cityAddressNo, areas);
+                    mAreas.append(cityAddressNo, areas);
                 }
                 areas.add(address);
 
